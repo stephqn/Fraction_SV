@@ -15,6 +15,9 @@ class Fraction {
 public:
 	Fraction();
 	Fraction(int numerateur, int denominateur);
+	void addition(const int ajout);
+	void addition(const Fraction& fraction);
+
 
 	string Afficher();
 	virtual ~Fraction();

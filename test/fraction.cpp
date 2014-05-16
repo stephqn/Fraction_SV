@@ -17,9 +17,9 @@ string string("3/2");
  * Test
  */
 
-
 TEST(Person, isStringOk)
 {
 	EXPECT_EQ("3/2", Afficher());
+
 }
 
