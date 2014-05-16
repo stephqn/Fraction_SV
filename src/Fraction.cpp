@@ -6,13 +6,22 @@
  */
 
 #include "Fraction.hpp"
+#include <iostream>
 
-Fraction::~Fraction() {
-	// TODO Auto-generated destructor stub
+
+Fraction::Fraction() :
+		_numerateur(0),
+		_denominateur(0) {
 }
 
-Fraction::Fraction() {
-	// TODO Auto-generated constructor stub
+Fraction::Fraction(int numerateur, int denominateur)
+{
+	_numerateur=0;
+	_denominateur=0;
+}
+
+Fraction::~Fraction() {
+
 
 }
 

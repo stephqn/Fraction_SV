@@ -10,8 +10,20 @@
 
 class Fraction {
 public:
-	virtual ~Fraction();
 	Fraction();
+	Fraction(int numerateur, int denominateur);
+	virtual ~Fraction();
+
+    int& getNum();
+    void setNum(int& numerateur);
+
+    int& getDenom();
+    void setDenom(int& denominatueur);
+
+private :
+	int _numerateur;
+	int _denominateur;
+
 };
 
 #endif /* FRACTION_HPP_ */
