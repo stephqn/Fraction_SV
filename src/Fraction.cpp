@@ -7,6 +7,7 @@
 
 #include "Fraction.hpp"
 #include <iostream>
+#include <sstream>
 
 Fraction::Fraction(){
 }
@@ -19,7 +20,7 @@ Fraction::Fraction(int numerateur, int denominateur)
 
 string Fraction::Afficher()
 {
-	string stringfraction = "";
+	string stringfraction = "" + toString(this->_numerateur) + "/" + toString(this->_denominateur);
 
 	return stringfraction;
 }
@@ -40,7 +41,12 @@ void Fraction::setDenom(const int iDenominateur)
 {
 	_denominateur=iDenominateur;
 }
-
+string Fraction::toString(const int tostring)
+{
+   std::ostringstream oss;
+   oss << tostring;
+   return oss.str();
+}
 
 Fraction::~Fraction() {
 

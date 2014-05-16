@@ -24,6 +24,7 @@ public:
 
     const int getDenom() const;
     void setDenom(const int denominateur);
+    string toString(const int tostring);
 
 private :
 	int _numerateur;
