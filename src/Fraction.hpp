@@ -5,24 +5,33 @@
  *      Author: stephan
  */
 
+#include <string>
+
 #ifndef FRACTION_HPP_
 #define FRACTION_HPP_
+using namespace std;
 
 class Fraction {
 public:
 	Fraction();
 	Fraction(int numerateur, int denominateur);
+
+	string Afficher();
 	virtual ~Fraction();
 
-    int& getNum();
-    void setNum(int& numerateur);
+    const int getNum() const;
+    void setNum(const int numerateur);
 
-    int& getDenom();
-    void setDenom(int& denominatueur);
+    const int getDenom() const;
+    void setDenom(const int denominateur);
 
 private :
 	int _numerateur;
 	int _denominateur;
+	string stringfraction;
+
+protected :
+	string _stringfraction;
 
 };
 

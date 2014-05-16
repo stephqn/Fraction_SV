@@ -8,20 +8,41 @@
 #include "Fraction.hpp"
 #include <iostream>
 
-
-Fraction::Fraction() :
-		_numerateur(0),
-		_denominateur(0) {
+Fraction::Fraction(){
 }
 
 Fraction::Fraction(int numerateur, int denominateur)
 {
-	_numerateur=0;
-	_denominateur=0;
+	_numerateur=numerateur;
+	_denominateur=denominateur;
 }
 
-Fraction::~Fraction() {
+string Fraction::Afficher()
+{
+	string stringfraction = "";
 
+	return stringfraction;
+}
+
+const int Fraction::getNum() const
+{
+	return _numerateur;
+}
+const int Fraction::getDenom() const
+{
+	return _denominateur;
+}
+void Fraction::setNum(const int iNumerateur)
+{
+	_numerateur=iNumerateur;
+}
+void Fraction::setDenom(const int iDenominateur)
+{
+	_denominateur=iDenominateur;
+}
+
+
+Fraction::~Fraction() {
 
 }
 
